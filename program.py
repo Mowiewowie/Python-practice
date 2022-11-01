@@ -101,5 +101,26 @@ MyFunction(4)
 MyFunction()
 
 #lamda, like anynonomous functions in javascript: (x) => (x) {code here using x}
+anonFunc = lambda a : a + 10
 myAnswer = lambda x, y : x + y
 print(myAnswer(10, 5))
+
+#classes basic
+class Person:
+  def __init__(self, name, age): #__init__ is the constructor
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1.name)
+
+#inherticance
+class Student(Person):
+    def __init__(self, name, age):
+        super().__init__(name, age) # super() inherits all properties and methods of its parent class
+        self.gradyear = 2011
+
+#user input
+username = input("Enter Username:")
+print("Username is", username)
